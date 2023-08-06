@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate news article</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="centered">
+                <div class="title"><strong>Evaluate a news article</strong></div>
+            </div>
+        </header>
+        <main>
+            <div class="centered">
+                <div id="app">
+                    <div id="info">
+                        <div class="" onsubmit="return Client.handleSubmit(event)">
+                            <input id="url" type="text" name="input" value="" placeholder="Paste URL here...">
+                            <button type="submit"
+                                    onclick="return Client.handleSubmit(event)"
+                                    onsubmit="return Client.handleSubmit(event)">Generate Sentiment
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-results">
+                        <div><strong>Result:</strong></div>
+                        <div id="results"></div>
+                        <div id="entryHolder">
+                            <div id="polarity"></div>
+                            <div id="agreement"></div>
+                            <div id="subjectivity"></div>
+                            <div id="confidence"></div>
+                            <div id="irony"></div>
+                            <div id="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="centered">
+            <p>The footer</p>
+        </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

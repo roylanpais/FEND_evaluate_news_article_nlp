@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 30px;
+  margin: 25px 0 0 0;
+  line-height: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #0080ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+footer {
+  margin: 30px 0 0 0;
+  background: #f3f3f3;
+  padding: 10px 0;
+  text-align: center;
+  color: #555555;
+  font-size: 14px;
+  border-top: 1px solid #dddddd;
+}
+button:hover {
+  background-color: #005eff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: #2e1d17;
+  font-size: 25px;
+  margin: 30px 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-results {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 200px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#app {
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  justify-content: center;
+  grid-gap: 1em;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  max-width: 500px;
+  max-height: 460px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#entryHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#results, #polarity, #agreement, #subjectivity, #confidence, #irony, #text {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333333;
+}
